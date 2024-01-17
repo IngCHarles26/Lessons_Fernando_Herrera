@@ -1,6 +1,7 @@
 import { Text, View } from "react-native";
 import { colors } from "../theme/appTheme";
 import Icon from 'react-native-vector-icons/Ionicons';
+import TouchableIcon from "../components/TouchableIcon";
 // import Icon from 'react-native-vector-icons/FontAwesome';
 
 // import Icon from 'react-native-vector-icons/FontAwesome5';
@@ -11,10 +12,9 @@ function Tab1Screen() {
     <View>
       <Text>
 
-
-        <Icon name="albums" size={300} color="#4F8EF7" />
-
-        Muestra conchatumadre
+        <TouchableIcon iconName="albums"  />
+        <TouchableIcon iconName="airplane-outline" />
+        <TouchableIcon iconName="desktop-outline" />
 
       </Text>
 

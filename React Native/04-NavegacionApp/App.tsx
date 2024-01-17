@@ -5,13 +5,24 @@ import { Text, View } from "react-native";
 import StackNavigator from './src/navigator/StackNavigator';
 import DrawerNavigation from './src/navigator/DrawerNavigator';
 import MenuLateral from './src/navigator/MenuLateral';
+import { AuthProvider } from './src/context/AuthContext';
 
 function App() {
   return (
     <NavigationContainer>
-      {/* <StackNavigator/> */}
-      <MenuLateral/>
+      <AppState>
+        {/* <StackNavigator/> */}
+        <MenuLateral/>
+      </AppState>
     </NavigationContainer> 
+  );
+}
+
+function AppState({children}:any) {
+  return (
+    <AuthProvider>
+      {children}
+    </AuthProvider> 
   );
 }
 
