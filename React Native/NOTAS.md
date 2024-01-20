@@ -89,6 +89,9 @@
   to it works good, you need to add this text in the babel.config.ts 'plugins: ['react-native-reanimated/plugin']'
 
 
+- *BottomTap.Navigation*: Los tabs no son cargados de manera simultanea, son cargados bajo demanda, pero cuando fueron cargados se mantienen activos, [documentation](https://reactnavigation.org/docs/bottom-tab-navigator)
+
+
 
 
 
